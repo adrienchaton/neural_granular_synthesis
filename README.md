@@ -1,2 +1,1 @@
-# neural_granular_synthesis
-anonymously hosting materials for the submission to ICMC 2020 entitled "Neural Granular Sound Synthesis"
+Anonymously hosting additional materials for the submission to the International Computer Music Conference 2020 entitled "Neural Granular Sound Synthesis".
