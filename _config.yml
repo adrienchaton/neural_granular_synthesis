@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
 title: Neural Granular Sound Synthesis
 description: Additional materials for the submission to ICMC 2020
-logo:
+logo: ./figures/architecture.pdf
