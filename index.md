@@ -24,7 +24,7 @@ data reconstructions
 
 sampling structured one-shot audio
 
-<a href="audio/Crash_s_note.wav">play</a>"
+<a href="audio/Crash_s_note.wav">sample_embed_crash</a>
 
 ### FREE-SYNTHESIS
 
