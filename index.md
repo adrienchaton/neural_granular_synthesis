@@ -40,7 +40,9 @@ data reconstructions
 
 sampling structured one-shot audio in the grain space of *8  Drums*
 
-* conditioning on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
+* conditioning on "Crash":
+
+<audio controls><source src="audio/Crash_s_note.wav"></audio>
 
 ### FREE-SYNTHESIS
 
