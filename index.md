@@ -1,5 +1,6 @@
 <!--
 <a href="audio/Crash_s_note.wav">sample_embed_crash</a>
+https://jekyllcodex.org/without-plugin/open-embed/#
 -->
 
 <script type="text/javascript"> 
@@ -37,11 +38,9 @@ data reconstructions
 
 ### SAMPLING
 
-sampling structured one-shot audio
+sampling structured one-shot audio in the grain space of *8  Drums*
 
-<audio controls>
-<source src="audio/Crash_s_note.wav">
-</audio>
+* conditioning on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
 
 ### FREE-SYNTHESIS
 
