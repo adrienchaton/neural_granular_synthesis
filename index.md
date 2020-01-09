@@ -30,27 +30,27 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
 
-*This page is under construction, sound examples will be added prior to the reviewing process.*
+*This page is under construction, sound examples are being added prior to the reviewing process.*
 
 ### RECONSTRUCTIONS
 
-Data reconstructions
+Data reconstructions.
 
 ### SAMPLING
 
-Structured one-shot audio clips generated from the recurrent embedding over the *8  Drums* grain space:
+Structured one-shot audio clips generated from the recurrent embedding over the *8  Drums* grain space.
 
 * sample conditioned on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
 
 ### FREE-SYNTHESIS
 
-Traversals in the latent grain space of the *10 animals* dataset:
+Traversals in the latent grain space of the *10 animals* dataset.
 
 * linear interpolation conditioned on "Cat": <audio controls><source src="audio/cat_interp_seq.wav"></audio>
 
 ### DATA-DRIVEN RESYNTHESIS
 
-audio style transfer
+Audio style transfer.
 
 &nbsp;
 
