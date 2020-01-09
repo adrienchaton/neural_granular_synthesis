@@ -34,17 +34,19 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ### RECONSTRUCTIONS
 
-data reconstructions
+Data reconstructions
 
 ### SAMPLING
 
-sampling structured one-shot audio in the grain space of *8  Drums*
+Structured one-shot audio clips generated from the recurrent embedding over the *8  Drums* grain space:
 
-* conditioning on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
+* sample conditioned on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
 
 ### FREE-SYNTHESIS
 
-latent interpolations
+Traversals in the latent grain space of the *10 animals* dataset:
+
+* linear interpolation conditioned on "Cat": <audio controls><source src="audio/cat_interp_seq.wav"></audio>
 
 ### DATA-DRIVEN RESYNTHESIS
 
