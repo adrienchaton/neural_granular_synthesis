@@ -32,6 +32,8 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 *This page is under construction, sound examples are being added prior to the reviewing process.*
 
+*All sound examples are raw outputs of the models, without any kind of audio effect/processing added.*
+
 ### RECONSTRUCTIONS
 
 Data reconstructions.
