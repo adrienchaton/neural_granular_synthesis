@@ -10,7 +10,11 @@ https://jekyllcodex.org/without-plugin/open-embed/#
       if(param.style.display == "none") param.style.display = "block"; 
       else param.style.display = "none" 
       } 
-</script> 
+</script>
+
+&nbsp;
+
+*This page is under construction, sound examples are being added prior to the reviewing process.*
 
 &nbsp;
 
@@ -29,8 +33,6 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 &nbsp;
 
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
-
-*This page is under construction, sound examples are being added prior to the reviewing process.*
 
 *All sound examples are raw outputs of the models, without any kind of audio effect/processing added.*
 
