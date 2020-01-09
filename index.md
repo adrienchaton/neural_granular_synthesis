@@ -26,6 +26,10 @@ sampling structured one-shot audio
 
 <a href="audio/Crash_s_note.wav">sample_embed_crash</a>
 
+<audio controls>
+<source src="audio/Crash_s_note.wav">
+</audio>
+
 ### FREE-SYNTHESIS
 
 latent interpolations
