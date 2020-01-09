@@ -1,3 +1,7 @@
+<!--
+<a href="audio/Crash_s_note.wav">sample_embed_crash</a>
+-->
+
 <script type="text/javascript"> 
       // Show button
       function look(type){ 
@@ -6,6 +10,8 @@
       else param.style.display = "none" 
       } 
 </script> 
+
+&nbsp;
 
 ## MODEL ARCHITECTURE
 
@@ -36,8 +42,6 @@ sampling structured one-shot audio
 <audio controls>
 <source src="audio/Crash_s_note.wav">
 </audio>
-
-<a href="audio/Crash_s_note.wav">sample_embed_crash</a>
 
 ### FREE-SYNTHESIS
 
