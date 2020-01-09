@@ -24,6 +24,8 @@ data reconstructions
 
 sampling structured one-shot audio
 
+<a href="audio/Crash_s_note.wav">play</a>"
+
 ### FREE-SYNTHESIS
 
 latent interpolations
