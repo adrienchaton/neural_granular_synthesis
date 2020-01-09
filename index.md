@@ -2,11 +2,15 @@
 
 <p align="center"> <img src="figures/architecture.png"> </p>
 
+&nbsp;
+
 ## GRANULAR LATENT SPACE
 
 <p align="center"> <img src="figures/granular_space.png"> </p>
 
 2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset). Using latent dimensions of a Variational Auto-Encoder (*VAE*) as a substitute for acoustic descriptors allows for an invertible representation. Grains can be synthesized from any position, such as along a continuous free-synthesis path. A waveform is assembled by overlap-add of the grain sequence.
+
+&nbsp;
 
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
 
@@ -27,6 +31,8 @@ latent interpolations
 ### DATA-DRIVEN RESYNTHESIS
 
 audio style transfer
+
+&nbsp;
 
 ## EXAMPLE INTERFACES
 
