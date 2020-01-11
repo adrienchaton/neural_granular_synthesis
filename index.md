@@ -14,7 +14,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 &nbsp;
 
-*This page is under construction, sound examples are being added prior to the reviewing process.*
+*This page is under construction, sound and video examples are being added prior to the reviewing process. Stay tuned during that period and afetr, more experiments may be uploaded !*
 
 &nbsp;
 
@@ -34,7 +34,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
 
-*All sound examples are raw outputs of the models, without any kind of audio effect/processing added.*
+*All sound examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
 ### RECONSTRUCTIONS
 
@@ -64,4 +64,4 @@ With GPU support, for instance a sufficient dedicated laptop chip or an external
 
 ### NEURAL DRUM MACHINE
 
-Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network.
+Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Moreover, we can alternatively sample random paths to explore other spectro-temporal dynamics. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network to write the buffers.
