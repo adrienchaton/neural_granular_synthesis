@@ -103,3 +103,7 @@ The upper integer box selects the drum condition sent to the model. The trigger 
 ### NEURAL *DRUM AND BASS* MACHINE
 
 For this one, a model trained on the 10 classes of the *Methlab sample pack* is used with a corresponding 10-track step sequencer. The process is similar to the previous video, but the classes of sounds are more ambiguous and not restricted to one-shot samples.
+
+Example of loop generated with this step sequencer and model: <audio controls><source src="test_methlab_drummachine.wav"></audio>
+
+&nbsp;
