@@ -109,3 +109,11 @@ For this one, a model trained on the 10 classes of the *Methlab sample pack* is 
 Example of loop generated with this step sequencer and model: <audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
 
 &nbsp;
+
+[Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_methlab_machine.png)
+
+&nbsp;
+
+<video id="methlab_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
+<source src="video/methlab_machine.mp4" type='video/mp4'>
+</video>
