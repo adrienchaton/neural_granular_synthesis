@@ -18,6 +18,12 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 &nbsp;
 
+## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
+
+<p align="center"> <img src="figures/neural_granular.png"> </p>
+
+&nbsp;
+
 ## MODEL ARCHITECTURE
 
 <p align="center"> <img src="figures/architecture.png"> </p>
