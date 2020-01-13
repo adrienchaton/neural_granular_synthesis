@@ -48,7 +48,7 @@ Neural granular sound synthesis:
 
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
 
-*All sound examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
+*All sound/video examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
 &nbsp;
 
