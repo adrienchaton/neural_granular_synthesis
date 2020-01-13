@@ -14,7 +14,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 &nbsp;
 
-*This page is under construction, sound and video examples are being added prior to the reviewing process. Stay tuned during that period and afetr, more experiments may be uploaded !*
+*This page is under construction, sound and video examples are being added prior to the reviewing process. Stay tuned during that period and after, more experiments may be uploaded !*
 
 &nbsp;
 
