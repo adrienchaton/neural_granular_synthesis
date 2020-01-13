@@ -36,9 +36,13 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 *All sound examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
+&nbsp;
+
 ### RECONSTRUCTIONS
 
 Data reconstructions.
+
+&nbsp;
 
 ### SAMPLING
 
@@ -46,11 +50,15 @@ Structured one-shot audio clips generated from the recurrent embedding over the 
 
 * sample conditioned on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
 
+&nbsp;
+
 ### FREE-SYNTHESIS
 
 Traversals in the latent grain space of the *10 animals* dataset.
 
 * linear interpolation conditioned on "Cat": <audio controls><source src="audio/cat_interp_seq.wav"></audio>
+
+&nbsp;
 
 ### DATA-DRIVEN RESYNTHESIS
 
@@ -61,6 +69,8 @@ Audio style transfer.
 ## EXAMPLE INTERFACES
 
 With GPU support, for instance a sufficient dedicated laptop chip or an external thunderbolt hardware, the models can be ran in real-time. In order to apply trained models to these different generative tasks, we currently work on some prototype interfaces based on a [Python OSC](https://pypi.org/project/python-osc/) server controlled from a [MaxMsp](https://cycling74.com) patch.
+
+&nbsp;
 
 ### NEURAL DRUM MACHINE
 
@@ -73,6 +83,8 @@ The upper integer box selects the drum condition sent to the model. The trigger 
 <video id="drum_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
 <source src="video/drum_machine.mp4" type='video/mp4'>
 </video>
+
+&nbsp;
 
 ### NEURAL *DRUM AND BASS* MACHINE
 
