@@ -90,6 +90,8 @@ With GPU support, for instance a sufficient dedicated laptop chip or an external
 
 Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Moreover, we can alternatively sample random paths to explore other spectro-temporal dynamics. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network to write the buffers.
 
+*The videos are made while running the model on a MacbookPro Retina 2015 **(without GPU)**, some latency can be seen when sampling and writing the buffers. Such latency is however low and given a GPU it could be sampled in real-time by the step sequencer rather than played-back.*
+
 [Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_drum_machine.png)
 
 The upper integer box selects the drum condition sent to the model. The trigger to the message **sample_note** generates a drum hit from the recurrent embedding. The trigger to the message **sample_path** draws a randomized linear path in the grain space, of same length that the embedding sample. This can be seen in the python console on the left side, answering to the messages sent through OSC. While the step sequencer loops, it is possible to resample some drum sounds that overwrite the previous buffer.
@@ -104,6 +106,6 @@ The upper integer box selects the drum condition sent to the model. The trigger 
 
 For this one, a model trained on the 10 classes of the *Methlab sample pack* is used with a corresponding 10-track step sequencer. The process is similar to the previous video, but the classes of sounds are more ambiguous and not restricted to one-shot samples.
 
-Example of loop generated with this step sequencer and model: <audio controls><source src="test_methlab_drummachine.wav"></audio>
+Example of loop generated with this step sequencer and model: <audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
 
 &nbsp;
