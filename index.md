@@ -65,3 +65,8 @@ With GPU support, for instance a sufficient dedicated laptop chip or an external
 ### NEURAL DRUM MACHINE
 
 Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Moreover, we can alternatively sample random paths to explore other spectro-temporal dynamics. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network to write the buffers.
+
+
+<video id="drum_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
+<source src="video/drum_machine.mp4" type='video/mp4'>
+</video>
