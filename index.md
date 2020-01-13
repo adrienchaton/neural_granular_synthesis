@@ -18,6 +18,10 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 &nbsp;
 
+[paper draft](https://github.com/anonymized124/neural_granular_synthesis/blob/master/draft.pdf)
+
+&nbsp;
+
 ## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
 
 Previous methods of granular sound synthesis.
