@@ -20,6 +20,14 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
 
+Previous methods of granular sound synthesis.
+
+<p align="center"> <img src="figures/common_granular.png"> </p>
+
+&nbsp;
+
+Neural granular sound synthesis:
+
 <p align="center"> <img src="figures/neural_granular.png"> </p>
 
 &nbsp;
