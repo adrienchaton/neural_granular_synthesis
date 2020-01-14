@@ -64,17 +64,37 @@ Data reconstructions.
 
 ### SAMPLING
 
-Structured one-shot audio clips generated from the recurrent embedding over the *8  Drums* grain space.
+Structured one-shot audio clips generated from models with recurrent embedding and conditioning.
 
-* sample conditioned on "Crash": <audio controls><source src="audio/Crash_s_note.wav"></audio>
+* trained on the Drum dataset: <audio controls><source src="audio/drum_samples.wav"></audio>
+
+* trained on the Methlab sample pack: <audio controls><source src="audio/methlab_sample.wav"></audio>
+
+* trained on the SOL dataset (instruments playing *ordinario*): <audio controls><source src="audio/ordinario_samples.wav"></audio>
+
+* trained on the SOL dataset (stringed instruments): <audio controls><source src="audio/string_samples.wav"></audio>
 
 &nbsp;
 
 ### FREE-SYNTHESIS
 
-Traversals in the latent grain space of the *10 animals* dataset.
+Continuous traversals in the latent grain space.
 
-* linear interpolation conditioned on "Cat": <audio controls><source src="audio/cat_interp_seq.wav"></audio>
+* linear interpolations for ESC-50 in Cat, Crow, Sheep: <audio controls><source src="audio/cat_crow_sheep_interp.wav"></audio>
+
+* linear interpolations for instruments playing *ordinario*: <audio controls><source src="audio/ordinario_interp.wav"></audio>
+
+* linear interpolations for stringed instruments: <audio controls><source src="audio/string_interp.wav"></audio>
+
+* linear interpolations for Clarinet: <audio controls><source src="audio/clar_interp.wav"></audio>
+
+* linear interpolations for Piano: <audio controls><source src="audio/piano_interp.wav"></audio>
+
+* linear interpolations in the Methlab model: <audio controls><source src="audio/methlab_interp.wav"></audio>
+
+* forward-backward linear interpolations in the Drum model: <audio controls><source src="audio/drum_fb.wav"></audio>
+
+* forward-backward linear interpolations in the Methlab model: <audio controls><source src="audio/methlab_fb.wav"></audio>
 
 &nbsp;
 
