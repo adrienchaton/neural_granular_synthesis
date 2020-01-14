@@ -24,13 +24,13 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
 
-Previous methods of granular sound synthesis.
+Previous methods of granular sound synthesis. A library of audio grains is analysed with acoustic descriptors, forming a discrete grain space. A target signal can be analyzed following the same procedure. By matching the scattered library to these target grains and assembling the selected grains, a waveform is assembled to resynthesize the target signal. Alternatively some curves can be drawn in the grain space, and synthesized using the neighboring library grains.
 
 <p align="center"> <img src="figures/common_granular.png"> </p>
 
 &nbsp;
 
-Neural granular sound synthesis:
+Neural granular sound synthesis adresses the limitations of the non-invertible discrete space and arbitrary analysis dimensions, using latent variables of a generative neural network (VAE) as substitutes to the acoustic descriptors. The encoder learns a continuous grain space and analysis dimensions that are invertible with the decoder. A target sound can be analysed and decoded, as well as continuous latent paths. Moreover, by training a sequential embedding over the latent grain space, we can as well sample sounds with a temporal structure such as musical notes and drum hits.
 
 <p align="center"> <img src="figures/neural_granular.png"> </p>
 
