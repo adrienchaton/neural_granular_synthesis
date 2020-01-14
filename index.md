@@ -24,13 +24,13 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 ## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
 
-Previous methods of granular sound synthesis. A library of audio grains is analysed with acoustic descriptors, forming a discrete grain space. A target signal can be analyzed following the same procedure. By matching the scattered library to these target grains and assembling the selected grains, a waveform is assembled to resynthesize the target signal. Alternatively some curves can be drawn in the grain space, and synthesized using the neighboring library grains.
+Previous methods of granular sound synthesis. A library of audio grains is analysed with acoustic descriptors, forming a discrete grain space. A target signal can be analyzed following the same procedure. By matching the scattered library to these target grains, a waveform is assembled to resynthesize the target signal. Alternatively some curves can be drawn in the grain space, and synthesized using the neighboring library grains.
 
 <p align="center"> <img src="figures/common_granular.png"> </p>
 
 &nbsp;
 
-Neural granular sound synthesis adresses the limitations of the non-invertible discrete space and arbitrary analysis dimensions, using latent variables of a generative neural network (VAE) as substitutes to the acoustic descriptors. The encoder learns a continuous grain space and analysis dimensions that are invertible with the decoder. A target sound can be analysed and decoded, as well as continuous latent paths. Moreover, by training a sequential embedding over the latent grain space, we can as well sample sounds with a temporal structure such as musical notes and drum hits. Model variants include as well decoder contioning, using some data or user labels, we can control some target sound quality in the synthesis process (eg. pitch, instrument class) in order to allow interactions and composition.
+Neural granular sound synthesis adresses the limitations of the non-invertible discrete grain space and arbitrary analysis dimensions, using latent variables of a generative neural network (VAE) as substitutes to the acoustic descriptors. The encoder learns a continuous grain space and analysis dimensions that are directly invertible to waveform domain with the decoder. A target sound can be analysed and decoded, as well as continuous latent paths. Moreover, by training a sequential embedding over the latent grain space, we can as well sample sounds with a temporal structure such as musical notes and drum hits. Model variants include as well decoder contioning, using some data or user labels, we can control some target sound quality in the synthesis process (eg. pitch, instrument class) in order to allow interactions and composition.
 
 <p align="center"> <img src="figures/neural_granular.png"> </p>
 
@@ -46,7 +46,7 @@ Neural granular sound synthesis adresses the limitations of the non-invertible d
 
 <p align="center"> <img src="figures/granular_space.png"> </p>
 
-2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset). Using latent dimensions of a Variational Auto-Encoder (*VAE*) as a substitute for acoustic descriptors allows for an invertible representation. Grains can be synthesized from any position, such as along a continuous free-synthesis path, and overlap-add into a waveform. A pitch target can be added.
+2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset and subsequent coloring). Grains can be synthesized from any latent position, such as along a continuous free-synthesis path, and overlap-add into a waveform. A pitch target can be added.
 
 &nbsp;
 
