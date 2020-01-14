@@ -58,7 +58,7 @@ Neural granular sound synthesis adresses the limitations of the non-invertible d
 
 ### RECONSTRUCTIONS
 
-Data reconstructions.
+Data reconstructions (each pair of sounds is input/reconstruction).
 
 &nbsp;
 
@@ -70,7 +70,7 @@ Structured one-shot audio clips generated from models with recurrent embedding a
 
 * trained on the Methlab sample pack: <audio controls><source src="audio/methlab_sample.wav"></audio>
 
-* trained on the SOL dataset (instruments playing *ordinario*): <audio controls><source src="audio/ordinario_samples.wav"></audio>
+* trained on the SOL dataset (instruments of the orchestra playing *ordinario*): <audio controls><source src="audio/ordinario_samples.wav"></audio>
 
 * trained on the SOL dataset (stringed instruments): <audio controls><source src="audio/string_samples.wav"></audio>
 
@@ -82,7 +82,7 @@ Continuous traversals in the latent grain space.
 
 * linear interpolations for ESC-50 in Cat, Crow, Sheep: <audio controls><source src="audio/cat_crow_sheep_interp.wav"></audio>
 
-* linear interpolations for instruments playing *ordinario*: <audio controls><source src="audio/ordinario_interp.wav"></audio>
+* linear interpolations for the orchestra playing *ordinario*: <audio controls><source src="audio/ordinario_interp.wav"></audio>
 
 * linear interpolations for stringed instruments: <audio controls><source src="audio/string_interp.wav"></audio>
 
@@ -96,11 +96,25 @@ Continuous traversals in the latent grain space.
 
 * forward-backward linear interpolations in the Methlab model: <audio controls><source src="audio/methlab_fb.wav"></audio>
 
+* forward-backward / circular / spiral for the orchestra playing *ordinario*: <audio controls><source src="audio/ordinario_fb_circ_spir.wav"></audio>
+
 &nbsp;
 
 ### DATA-DRIVEN RESYNTHESIS
 
-Audio style transfer.
+Audio style transfer (first sound is the target, followed by diverse resynthesis outputs from the models)
+
+* a *Pizzicato* (Cello) played as Drums: <audio controls><source src="audio/pizz_drum.wav"></audio>
+
+* a *Tremolo* (Cello) played as Cat, Drum, Piano: <audio controls><source src="audio/trem_cat_drum_piano.wav"></audio>
+
+* a Clarinet solo played as Cat, Rooster, Cow, Sheep, Dog: <audio controls><source src="audio/csolo_cat_rooster_cow_sheep_dog.wav"></audio>
+
+* a Violin solo played as Cat, Sheep, Cow, Cow, Frog: <audio controls><source src="audio/vsolo_cat_sheep_cow_frog.wav"></audio>
+
+* a synthesizer sound played as Clarinet, Methlab, Piano, String: <audio controls><source src="audio/synth1_clari_met_piano_string.wav"></audio>
+
+* a synthesizer sound played as Cat, Methlab, orchestra playing *ordinario*: <audio controls><source src="audio/synth0_cat_met_ord.wav"></audio>
 
 &nbsp;
 
