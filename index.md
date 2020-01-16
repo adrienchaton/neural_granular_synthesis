@@ -67,7 +67,7 @@ Data reconstructions (each pair of sounds is input/reconstruction).
 Structured one-shot audio clips generated from models with recurrent embedding and conditioning.
 
 * trained on the Drum dataset:
-<audio controls><source src="audio/drum_samples.wav"></audio>
+<audio id="player" controls><source src="audio/drum_samples.wav"></audio>
 
 * trained on the Methlab sample pack:
 <audio controls><source src="audio/methlab_sample.wav"></audio>
