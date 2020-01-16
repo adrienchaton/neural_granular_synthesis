@@ -3,6 +3,16 @@
 https://jekyllcodex.org/without-plugin/open-embed/#
 -->
 
+<!--
+for assets/css/style.scss
+audio { 
+  width: 600px; 
+  box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+  border-radius: 90px;
+  transform: scale(1.05);
+}
+-->
+
 <script type="text/javascript"> 
       // Show button
       function look(type){ 
