@@ -75,8 +75,7 @@ Structured one-shot audio clips generated from models with recurrent embedding a
 
 ➞ trained on the SOL dataset (instruments of the orchestra playing *ordinario*)    <audio controls><source src="audio/ordinario_samples.wav"></audio>
 
-➞ trained on the SOL dataset (stringed instruments):
-<audio controls><source src="audio/string_samples.wav"></audio>
+➞ trained on the SOL dataset (stringed instruments)    <audio controls><source src="audio/string_samples.wav"></audio>
 
 &nbsp;
 
