@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet"></link>
+
 <!--
 <a href="audio/Crash_s_note.wav">sample_embed_crash</a>
 https://jekyllcodex.org/without-plugin/open-embed/#
@@ -11,8 +13,6 @@ https://jekyllcodex.org/without-plugin/open-embed/#
       else param.style.display = "none" 
       } 
 </script>
-
-<link href="style.css" rel="stylesheet"></link>
 
 &nbsp;
 
