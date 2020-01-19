@@ -13,7 +13,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 </script>
 
 #player {
- width: 100%;
+ width: 50%;
 }​
 
 &nbsp;
