@@ -12,9 +12,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
       } 
 </script>
 
-#player {
- width: 50%;
-}​
+<link href="style.css" rel="stylesheet"></link>
 
 &nbsp;
 
