@@ -3,6 +3,7 @@
 <!--
 <a href="audio/Crash_s_note.wav">sample_embed_crash</a>
 https://jekyllcodex.org/without-plugin/open-embed/#
+<audio id="player" controls><source src="audio/drum_samples.wav"></audio> = with an id for css
 -->
 
 <script type="text/javascript"> 
