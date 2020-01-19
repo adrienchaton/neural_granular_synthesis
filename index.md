@@ -1,4 +1,4 @@
-<link href="style.css" rel="stylesheet"></link>
+<link href="style.css" rel="stylesheet">
 
 <!--
 <a href="audio/Crash_s_note.wav">sample_embed_crash</a>
