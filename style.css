@@ -1,4 +1,15 @@
-player {
+#player {
  width: 20%;
  height: 20%;
 }
+
+/*
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+}
+audio {
+    scale: 0.3;
+}
+/*
