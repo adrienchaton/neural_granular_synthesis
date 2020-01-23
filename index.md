@@ -77,7 +77,7 @@ Structured one-shot audio clips generated from models with recurrent embedding a
 
 ➞ trained on the SOL dataset (instruments of the orchestra playing *ordinario*)    <audio controls><source src="audio/ordinario_samples.wav"></audio>
 
-➞ trained on the SOL dataset (stringed instruments)    <audio controls><source src="audio/string_samples.wav"></audio>
+➞ trained on the SOL dataset (string instruments)    <audio controls><source src="audio/string_samples.wav"></audio>
 
 &nbsp;
 
@@ -89,7 +89,7 @@ Continuous traversals in the latent grain space.
 
 ➞ linear interpolations for the orchestra playing *ordinario*    <audio controls><source src="audio/ordinario_interp.wav"></audio>
 
-➞ linear interpolations for stringed instruments    <audio controls><source src="audio/string_interp.wav"></audio>
+➞ linear interpolations for string instruments    <audio controls><source src="audio/string_interp.wav"></audio>
 
 ➞ linear interpolations for Clarinet    <audio controls><source src="audio/clar_interp.wav"></audio>
 
