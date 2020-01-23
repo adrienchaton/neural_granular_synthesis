@@ -15,6 +15,8 @@ https://jekyllcodex.org/without-plugin/open-embed/#
       } 
 </script>
 
+# THIS DEMONSTRATION MATERIAL IS NOT YET READY AND WILL BE COMPLETELY UPDATED IN THE NEXT WEEK (FIGURES, AUDIO & EXPLANATIONS)
+
 &nbsp;
 
 **We recommend viewing the page in Chrome browser as styling options differ.**
