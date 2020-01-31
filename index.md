@@ -25,7 +25,7 @@ https://jekyllcodex.org/without-plugin/open-embed/#
 
 &nbsp;
 
-[paper draft](https://github.com/anonymized124/neural_granular_synthesis/blob/master/draft.pdf)
+[paper submission](https://github.com/anonymized124/neural_granular_synthesis/blob/master/neural_granular_synthesis_submission.pdf)
 
 &nbsp;
 
