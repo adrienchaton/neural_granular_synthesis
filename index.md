@@ -25,6 +25,12 @@ and edit style.css for the size
 
 ## Motivation for Neural Granular Sound Synthesis
 
+In the left, a granular synthesis space is formed by analizing a library of audio grains, scattered as (+), with acoustic descriptors. These dimensions allow for visualization and control of the synthesis. A free-synthesis path can be drawn or a target criterion can be formed by analyzing the grain series of an other signal (o). Grains from the libraries can be then selected by matching to these targets with respect to acoustic descriptor values.
+
+Some limitations arise in this process. The acoustic descriptors are not invertible so it is not possible to synthesize from them, besides the scattered library grain coordinates. The quality of the analysis is bound by the choice and design of acoustic descriptors, which only account for local audio similarities. Thus this space does not organize the longer temporal structure of audio events such as notes or drum hits, which cannot be generated without features extracted from an other corresponding target signal.
+
+&nbsp;
+
 <p align="center"> <img src="figures/neural_granular.png"> </p>
 
 &nbsp;
