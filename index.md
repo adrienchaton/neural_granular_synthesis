@@ -25,25 +25,41 @@ and edit style.css for the size
 
 ## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
 
-
+<p align="center"> <img src="figures/neural_granular.png"> </p>
 
 &nbsp;
 
 ## MODEL ARCHITECTURE
 
-
+<p align="center"> <img src="figures/architecture.png"> </p>
 
 &nbsp;
 
 ## GRANULAR LATENT SPACE
 
-<p align="center"> <img src="figures/granular_space.png"> </p>
+<p align="center"> <img src="figures/latent_space.png"> </p>
 
 2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset and subsequent coloring). Grains can be synthesized from any latent position, at or besides these points of the database latent scatter.
 
 &nbsp;
 
+## Structured waveform generation from the recurrent embedding
+
+<p align="center"> <img src="figures/vae double ola.png"> </p>
+
+&nbsp;
+
+## Morphing of sound samples
+
+<p align="center"> <img src="figures/embed_interp.png"> </p>
+
+&nbsp;
+
 ## SOUND EXAMPLES FROM THE TRAINED MODELS
+
+Summary of the interactions in Neural Granular Sound synthesis
+
+<p align="center"> <img src="figures/grain_gen.png"> </p>
 
 *All sound/video examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
