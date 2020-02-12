@@ -91,7 +91,9 @@ Resulting interactions in Neural Granular Sound Synthesis. In the left, structur
 
 ### Reconstructions
 
-Data reconstructions are performed by auto-encoding a database sample. Each pair of sounds is the input followed with the model reconstruction. In that case, the best accuracy and audio fidelity is desired and assesses the performance of the trained model in the reconstruction objective.
+Data reconstructions are performed by auto-encoding a database sample. Each pair of sounds is the input followed with the model reconstruction. In that case, the best accuracy and audio fidelity is desired and assesses the performance of the trained model in the reconstruction objective. Following are some *violin* note reconstructions.
+
+<audio controls><source src="audio/rec_violin.wav"></audio> <audio controls><source src="audio/rec_violin2.wav"></audio> <audio controls><source src="audio/rec_violin3.wav"></audio> <audio controls><source src="audio/rec_violin4.wav"></audio>
 
 &nbsp;
 
