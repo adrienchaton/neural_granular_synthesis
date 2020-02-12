@@ -111,7 +111,7 @@ Using such a model trained on *Studio-On-Line (SOL)* dataset, we can sample inst
 
 Variable length free-synthesis trajectories can be drawn accross the latent space, continuously inverting to grains and waveform. For instance, linear interpolations in the latent grain space of a model trained in *SOL*.
 
-<audio controls><source src="audio/interp_ord_1.wav"></audio> <audio controls><source src="audio/interp_ord_2.wav"></audio> <audio controls><source src="audio/interp_ord_3.wav">
+<audio controls><source src="audio/interp_ord_1.wav"></audio> <audio controls><source src="audio/interp_ord_2.wav"></audio> <audio controls><source src="audio/interp_ord_3.wav"></audio>
 
 Latent trajectories may as well be looped, such as a forward-backward linear interpolation, where the step size can be randomized since the model can continuously synthesize along this latent segment. Here applied to strings in *SOL* or to the drum sounds in the *8 Drums* dataset.
 
