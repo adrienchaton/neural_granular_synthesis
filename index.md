@@ -91,7 +91,7 @@ Resulting interactions in Neural Granular Sound Synthesis. In the left, structur
 
 ### Reconstructions
 
-Data reconstructions (each pair of sounds is input/reconstruction).
+Data reconstructions are performed by auto-encoding a database sample. Each pair of sounds is the input followed with the model reconstruction. In that case, the best accuracy and audio fidelity is desired and assesses the performance of the trained model in the reconstruction objective.
 
 &nbsp;
 
