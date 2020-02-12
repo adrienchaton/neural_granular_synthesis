@@ -19,7 +19,7 @@ and edit style.css for the size
 
 &nbsp;
 
-[paper submission](https://github.com/anonymized124/neural_granular_synthesis/blob/master/neural_granular_synthesis_submission.pdf)
+[Paper submission](https://github.com/anonymized124/neural_granular_synthesis/blob/master/neural_granular_synthesis_submission.pdf)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 &nbsp;
 
-[architecture](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
+[Architecture](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
 <!--
 <p align="center"> <img src="figures/architecture.png"> </p>
 -->
@@ -59,7 +59,10 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 &nbsp;
 
+[Granular latent space](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/latent_space.png?raw=true)
+<!--
 <p align="center"> <img src="figures/latent_space.png"> </p>
+-->
 
 &nbsp;
 
@@ -69,7 +72,10 @@ By using this two-level audio modeling, we can generate structured audio events 
 
 &nbsp;
 
+[Generation from the temporal embedding](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/vae%20double%20ola.png?raw=true)
+<!--
 <p align="center"> <img src="figures/vae double ola.png"> </p>
+-->
 
 &nbsp;
 
@@ -79,7 +85,10 @@ By performing interpolations in the top level embedding, we can transition in be
 
 &nbsp;
 
+[Morphing of drum sounds](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/embed_interp.png?raw=true)
+<!--
 <p align="center"> <img src="figures/embed_interp.png"> </p>
+-->
 
 &nbsp;
 
@@ -87,7 +96,10 @@ By performing interpolations in the top level embedding, we can transition in be
 
 Summary of the interactions in Neural Granular Sound Synthesis. In the left, structured latent paths can be sampled from the higher temporal embedding. In the middle, we can draw and freely synthesize along any latent trajectory. In the right, we can encode an other target signal and resynthesize it.
 
+[Summary of generative granular interactions](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/grain_gen.png?raw=true)
+<!--
 <p align="center"> <img src="figures/grain_gen.png"> </p>
+-->
 
 *All sound/video examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
