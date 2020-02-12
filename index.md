@@ -99,7 +99,7 @@ Using a model with temporal embedding, trained on the 8 classes of the *8 Drums*
 
 <audio controls><source src="audio/drums_snote_crash.wav"></audio> <audio controls><source src="audio/drums_snote_kick.wav"></audio> <audio controls><source src="audio/drums_snote_ride.wav"></audio> <audio controls><source src="audio/drums_snote_snare.wav"></audio> <audio controls><source src="audio/drums_snote_tom.wav"></audio>
 
-Using such a model trained on Studio-On-Line dataset, we can sample instrumental notes. In this order *violin*, *cello*, *clarinet*, *french-horn* and *piano*.
+Using such a model trained on *Studio-On-Line (SOL)* dataset, we can sample instrumental notes. In this order *violin*, *cello*, *clarinet*, *french-horn* and *piano*.
 
 <audio controls><source src="audio/sol_snote_violin.wav"></audio> <audio controls><source src="audio/sol_snote_violin2.wav"></audio> <audio controls><source src="audio/sol_snote_cello.wav"></audio> <audio controls><source src="audio/sol_snote_cl.wav"></audio> <audio controls><source src="audio/sol_snote_frhorn.wav"></audio> <audio controls><source src="audio/sol_snote_piano.wav"></audio>
 
@@ -107,7 +107,9 @@ Using such a model trained on Studio-On-Line dataset, we can sample instrumental
 
 ### Free-synthesis
 
+Variable length free-synthesis trajectories can be drawn accross the latent space, continuously inverting to grains and waveform. For instance, linear interpolations in the latent grain space of a model trained in *SOL*.
 
+<audio controls><source src="audio/interp_ord_1.wav"></audio> <audio controls><source src="audio/interp_ord_2.wav"></audio> <audio controls><source src="audio/interp_ord_3.wav">
 
 &nbsp;
 
