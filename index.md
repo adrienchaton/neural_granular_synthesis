@@ -23,19 +23,19 @@ and edit style.css for the size
 
 &nbsp;
 
-## MOTIVATION FOR NEURAL GRANULAR SOUND SYNTHESIS
+## Motivation for Neural Granular Sound Synthesis
 
 <p align="center"> <img src="figures/neural_granular.png"> </p>
 
 &nbsp;
 
-## MODEL ARCHITECTURE
+## Model architecture
 
 <p align="center"> <img src="figures/architecture.png"> </p>
 
 &nbsp;
 
-## GRANULAR LATENT SPACE
+## Granular latent space
 
 <p align="center"> <img src="figures/latent_space.png"> </p>
 
@@ -55,7 +55,7 @@ and edit style.css for the size
 
 &nbsp;
 
-## SOUND EXAMPLES FROM THE TRAINED MODELS
+## Sound examples from the trained models
 
 Summary of the interactions in Neural Granular Sound synthesis
 
@@ -65,34 +65,34 @@ Summary of the interactions in Neural Granular Sound synthesis
 
 &nbsp;
 
-### RECONSTRUCTIONS
+### Reconstructions
 
 Data reconstructions (each pair of sounds is input/reconstruction).
 
 &nbsp;
 
-### SAMPLING
+### Sampling
 
 &nbsp;
 
-### FREE-SYNTHESIS
+### Free-synthesis
 
-
-
-&nbsp;
-
-### DATA-DRIVEN RESYNTHESIS
 
 
 &nbsp;
 
-## EXAMPLE INTERFACES
+### Data-driven resynthesis
+
+
+&nbsp;
+
+## Example interfaces
 
 With GPU support, for instance a sufficient dedicated laptop chip or an external thunderbolt hardware, the models can be ran in real-time. In order to apply trained models to these different generative tasks, we currently work on some prototype interfaces based on a [Python OSC](https://pypi.org/project/python-osc/) server controlled from a [MaxMsp](https://cycling74.com) patch.
 
 &nbsp;
 
-### NEURAL DRUM MACHINE
+### Neural Drum Machine
 
 Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Moreover, we can alternatively sample random paths to explore other spectro-temporal dynamics. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network to write the buffers.
 
@@ -108,7 +108,7 @@ The upper integer box selects the drum condition sent to the model. The trigger 
 
 &nbsp;
 
-### NEURAL *DRUM AND BASS* MACHINE
+### Neural *Drum and Bass* Machine
 
 For this one, a model trained on 10 classes of a [Methlab](https://soundcloud.com/methlab-recordings) sample pack is used with a corresponding 10-track step sequencer. Classes are *Bass, Break, Cymbal, Fx, Hat, Kick, Lead, Pad, Perc, Snare*. We use a restricted set of 260 sound samples collected from their online music competitions. The process is similar to the previous video, but the classes of sounds are more ambiguous and not restricted to one-shot samples (e.g. loops).
 
