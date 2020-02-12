@@ -57,7 +57,7 @@ and edit style.css for the size
 
 ## Sound examples from the trained models
 
-Summary of the interactions in Neural Granular Sound synthesis
+Summary of the interactions in Neural Granular Sound Synthesis
 
 <p align="center"> <img src="figures/grain_gen.png"> </p>
 
