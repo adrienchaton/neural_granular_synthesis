@@ -170,3 +170,4 @@ Example of loop generated with this step sequencer and model: <audio controls><s
 <video id="methlab_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
 <source src="video/methlab_machine.mp4" type='video/mp4'>
 </video>
+
