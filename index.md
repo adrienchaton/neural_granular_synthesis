@@ -33,7 +33,10 @@ In the right, developping a raw waveform Variational Auto-Encoder to learn a gra
 
 &nbsp;
 
+[Neural Granular Sound Synthesis](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/neural_granular.png?raw=true)
+<!--
 <p align="center"> <img src="figures/neural_granular.png"> </p>
+-->
 
 &nbsp;
 
@@ -43,7 +46,10 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 &nbsp;
 
+[architecture](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
+<!--
 <p align="center"> <img src="figures/architecture.png"> </p>
+-->
 
 &nbsp;
 
