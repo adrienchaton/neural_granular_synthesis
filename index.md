@@ -41,6 +41,8 @@ and edit style.css for the size
 
 *This page is under construction, sound and video examples are being added for the reviewing process. Stay tuned during that period and after, more experiments may be uploaded !*
 
+*We recommend viewing in Chrome browser since the page rendering and audio playback may differ depending on other browsers.*
+
 &nbsp;
 
 [Paper submission](https://github.com/anonymized124/neural_granular_synthesis/blob/master/neural_granular_synthesis_submission.pdf)
