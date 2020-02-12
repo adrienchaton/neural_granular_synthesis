@@ -25,11 +25,11 @@ and edit style.css for the size
 
 ## Motivation for Neural Granular Sound Synthesis
 
-In the left, a granular synthesis space is formed by analizing a library of audio grains, scattered as (+), with acoustic descriptors. These dimensions allow for visualization and control of the synthesis. A free-synthesis path can be drawn or a target criterion can be formed by analyzing the grain series of an other signal (o). Grains from the libraries can be then selected by matching to these targets with respect to acoustic descriptor values.
+In the left, a granular synthesis space is formed by analysing a library of audio grains, scattered as (+), with acoustic descriptors. These dimensions allow for visualization and control of the synthesis. A free-synthesis path can be drawn or a target criterion can be formed by analysing the grain series of an other signal (o). Grains from the library can be then selected by matching these targets with respect to acoustic descriptor values.
 
 Some limitations arise in this process. Amongst others, the acoustic descriptors are not invertible so it is not possible to synthesize from them, besides the scattered library grain coordinates. The quality of the analysis is bound by the choice and design of acoustic descriptors, which only account for local audio similarities. Thus this space does not organize the longer temporal structure of audio events such as notes or drum hits, which cannot be generated without features extracted from an other corresponding target signal.
 
-In the right, using a Variational Auto-Encoder to learn a grain latent space, we refine some of these and enable new generative processes based on concepts of granular sound synthesis. Its learned analysis dimensions are continuously invertible to the signal domain. We can thus synthesize along any path, without need to store the grain library after the training. An other sound sample can be auto-encoded, to perform resynthesis, with some possible additional user controls to condition the decoder generation. On top of this grain-level representation, we can efficiently train a recurrent embedding on contiguous grain series to learn meaningful temporal paths within the latent grain space. As a result, the model can sample structured audio envents such as note and drum hits, as well as morph their features.
+In the right, developping a raw waveform Variational Auto-Encoder to learn a grain latent space, we alleviate some of these limitations and enable new generative processes based on concepts of granular sound synthesis. Its learned analysis dimensions are continuously invertible to the signal domain. We can thus synthesize along any path, without need to store the grain library after the training. An other sound sample can be auto-encoded, to perform resynthesis, with some possible additional user controls to condition the decoder generation. On top of this grain-level representation, we can efficiently train a recurrent embedding on contiguous grain series to learn meaningful temporal paths within the latent grain space. As a result, the model can sample structured audio envents such as note and drum hits, as well as morph their features.
 
 &nbsp;
 
@@ -39,7 +39,7 @@ In the right, using a Variational Auto-Encoder to learn a grain latent space, we
 
 ## Model architecture
 
-This figure details the complete Variational Auto-Encoder (VAE) model. The lower VAE encodes grain series into latent series, which are fed to the subtractive noise synthesis decoder. This can be conditionned with concatenation of one-hot use labels. The decoded grain series are overlap-add into a waveform. A second recurrent VAE can be trained on contiguous series of latent features, to learn structured paths in the grain space. Performing this temporal modeling at the down-sampled grain level efficiently accounts for the longer term relationships while the bottom VAE ensures the quality of the local grain features.
+This figure details the complete Variational Auto-Encoder (VAE) model. The lower VAE encodes grain series into latent series, which are fed to the subtractive noise synthesis decoder. It can be conditionned with concatenation of one-hot user labels. The decoded grain series are overlap-add into a waveform. A second recurrent VAE can be trained on contiguous series of latent features, to learn structured paths in the grain space. Performing this temporal modeling at the down-sampled grain level efficiently accounts for the longer-term relationships while the bottom VAE ensures the quality of the local grain features.
 
 &nbsp;
 
@@ -59,7 +59,7 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 ## Structured waveform generation from the recurrent embedding
 
-By using this two-level audio modeling, we can generate structured audio events such as musical notes or drum hits. In the first place, the top level embedding is sampled, a latent paths is recurrently decoded. This series is fed to the bottom filtering noise decoder which outputs the corresponding waveform.
+By using this two-level audio modeling, we can generate structured audio events such as musical notes or drum hits. In the first place, the top level embedding is sampled, a latent path is recurrently decoded. This series is fed to the bottom filtering noise decoder which outputs the corresponding waveform.
 
 &nbsp;
 
@@ -79,7 +79,7 @@ By performing interpolations in the top level embedding, we can transition in be
 
 ## Sound examples from the trained models
 
-Summary of the interactions in Neural Granular Sound Synthesis
+Summary of the interactions in Neural Granular Sound Synthesis. In the left, structured latent paths can be sampled from the higher temporal embedding. In the middle, we can draw and freely synthesize along any latent trajectory. In the right, we can encode an other target signal and resynthesize it.
 
 <p align="center"> <img src="figures/grain_gen.png"> </p>
 
