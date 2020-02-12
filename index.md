@@ -124,6 +124,12 @@ Latent trajectories may as well be looped, such as a forward-backward linear int
 
 &nbsp;
 
+### Temporal morphing
+
+Each audio event sampled from the temporal embedding is represented as a single feature point. When interpolating in between two points, we can generate the corresponding latent grain paths which result in waveforms with evolving structure. For instance, we applied this to drums in order to get varying enveloppes. Each audio file is the first decoded embedding point, an intermediate point and the other end point. We set the intermediate sample half-way in the embedding interpolation.
+
+&nbsp;
+
 ## Example interfaces
 
 With GPU support, for instance a sufficient dedicated laptop chip or an external thunderbolt hardware, the models can be ran in real-time. In order to apply trained models to these different generative tasks, we currently work on some prototype interfaces based on a [Python OSC](https://pypi.org/project/python-osc/) server controlled from a [MaxMsp](https://cycling74.com) patch.
