@@ -111,6 +111,10 @@ Variable length free-synthesis trajectories can be drawn accross the latent spac
 
 <audio controls><source src="audio/interp_ord_1.wav"></audio> <audio controls><source src="audio/interp_ord_2.wav"></audio> <audio controls><source src="audio/interp_ord_3.wav">
 
+Latent trajectories may be as well repeated, such as a forward-backward linear interpolation, where the step size can be randomized since the model can continuously synthesize along this latent segment. This is applied to strings in *SOL* or to the drum sounds in the *8 Drums* dataset.
+
+<audio controls><source src="audio/interp_interpfb_string2.wav">
+
 &nbsp;
 
 ### Data-driven resynthesis
