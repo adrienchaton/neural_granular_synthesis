@@ -99,6 +99,8 @@ Using a model with temporal embedding, trained on the 8 classes of the *8 Drums*
 
 <audio controls><source src="audio/drums_snote_crash.wav"></audio> <audio controls><source src="audio/drums_snote_kick.wav"></audio> <audio controls><source src="audio/drums_snote_ride.wav"></audio> <audio controls><source src="audio/drums_snote_snare.wav"></audio>
 
+Using such a model trained on Studio-On-Line dataset, we can sample instrumental notes.
+
 &nbsp;
 
 ### Free-synthesis
