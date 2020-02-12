@@ -131,7 +131,7 @@ We can perform resynthesis by encoding an other sample and decoding its inferred
 
 Each audio event sampled from the temporal embedding is represented as a single feature point. When interpolating in between two points, we can generate the corresponding latent grain paths which result in waveforms with evolving structure. For instance, we applied this to drums in order to get varying enveloppes. Each audio file is the first decoded embedding point, an intermediate point and the other end point. We set the intermediate sample half-way in the embedding interpolation.
 
-<audio controls><source src="audio/interpembed_drums.wav"></audio> <audio controls><source src="audio/interpembed_drums2.wav"></audio> <audio controls><source src="audio/interpembed_drums3.wav"></audio>
+<audio controls><source src="audio/interpembed_drums.wav"></audio>
 
 &nbsp;
 
