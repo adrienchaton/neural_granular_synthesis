@@ -91,9 +91,15 @@ Resulting interactions in Neural Granular Sound Synthesis. In the left, structur
 
 ### Reconstructions
 
-Data reconstructions are performed by auto-encoding a database sample. Each pair of sounds is the input followed with the model reconstruction. In that case, the best accuracy and audio fidelity is desired and assesses the performance of the trained model in the reconstruction objective. Following are some *violin* note reconstructions.
+Data reconstructions are performed by auto-encoding a database sample. Each pair of sounds is the input followed with the model reconstruction. In that case, the best accuracy and audio fidelity is desired, assessing  the performance of the trained model in the reconstruction objective. Following are some *violin* note reconstructions from *Studio-On-Line*.
 
 <audio controls><source src="audio/rec_violin.wav"></audio> <audio controls><source src="audio/rec_violin2.wav"></audio> <audio controls><source src="audio/rec_violin3.wav"></audio> <audio controls><source src="audio/rec_violin4.wav"></audio>
+
+Following are some reconstructions across the *SOL* orchestra in *ordinario*.
+<audio controls><source src="audio/rec_ord.wav"></audio> <audio controls><source src="audio/rec_ord2.wav"></audio> <audio controls><source src="audio/rec_ord3.wav"></audio> <audio controls><source src="audio/rec_ord4.wav"></audio> <audio controls><source src="audio/rec_ord5.wav"></audio> <audio controls><source src="audio/rec_ord6.wav"></audio> <audio controls><source src="audio/rec_ord7.wav"></audio> <audio controls><source src="audio/rec_ord8.wav"></audio> 
+
+Following are some drum hit reconstructions in the *8 Drums* dataset.
+<audio controls><source src="audio/rec_violin.wav"></audio>
 
 &nbsp;
 
@@ -103,7 +109,7 @@ Using a model with temporal embedding, trained on the 8 classes of the *8 Drums*
 
 <audio controls><source src="audio/drums_snote_crash.wav"></audio> <audio controls><source src="audio/drums_snote_kick.wav"></audio> <audio controls><source src="audio/drums_snote_ride.wav"></audio> <audio controls><source src="audio/drums_snote_snare.wav"></audio> <audio controls><source src="audio/drums_snote_tom.wav"></audio>
 
-Using such a model trained on *Studio-On-Line (SOL)* dataset, we can sample instrumental notes. In this order *violin*, *cello*, *clarinet*, *french-horn* and *piano*.
+Using such a model trained on *SOL* dataset, we can sample instrumental notes. In this order *violin*, *cello*, *clarinet*, *french-horn* and *piano*.
 
 <audio controls><source src="audio/sol_snote_violin.wav"></audio> <audio controls><source src="audio/sol_snote_violin2.wav"></audio> <audio controls><source src="audio/sol_snote_cello.wav"></audio> <audio controls><source src="audio/sol_snote_cl.wav"></audio> <audio controls><source src="audio/sol_snote_frhorn.wav"></audio> <audio controls><source src="audio/sol_snote_piano.wav"></audio>
 
