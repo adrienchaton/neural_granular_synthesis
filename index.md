@@ -39,15 +39,21 @@ In the right, using a Variational Auto-Encoder to learn a grain latent space, we
 
 ## Model architecture
 
+This figure details the complete Variational Auto-Encoder (VAE) model. The lower VAE encodes grain series into latent series, which are fed to the subtractive noise synthesis decoder. This can be conditionned with concatenation of one-hot use labels. The decoded grain series are overlap-add into a waveform. A second recurrent VAE can be trained on contiguous series of latent features, to learn structured paths in the grain space. Performing this temporal modeling at the down-sampled grain level efficiently accounts for the longer term relationships while the bottom VAE ensures the quality of the local grain features.
+
+&nbsp;
+
 <p align="center"> <img src="figures/architecture.png"> </p>
 
 &nbsp;
 
 ## Granular latent space
 
-<p align="center"> <img src="figures/latent_space.png"> </p>
-
 2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset and subsequent coloring). Grains can be synthesized from any latent position, at or besides these points of the database latent scatter.
+
+&nbsp;
+
+<p align="center"> <img src="figures/latent_space.png"> </p>
 
 &nbsp;
 
