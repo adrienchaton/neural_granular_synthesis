@@ -144,6 +144,8 @@ Using a model with sequential embedding and conditioning trained over the *8  Dr
 
 The upper integer box selects the drum condition sent to the model. The trigger to the message **sample_note** generates a drum hit from the recurrent embedding. The trigger to the message **sample_path** draws a randomized linear path in the grain space, of same length as the embedding sample. This can be seen in the python console on the left side, answering to the messages sent through OSC. While the step sequencer loops, it is possible to resample some drum sounds that overwrite the previous buffer.
 
+&nbsp;
+
 <video id="drum_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
 <source src="video/drum_machine.mp4" type='video/mp4'>
 </video>
@@ -156,8 +158,9 @@ For this one, a model trained on 10 classes of a [Methlab](https://soundcloud.co
 
 [Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_methlab_machine.png)
 
-Example of loop generated with this step sequencer and model:
-<audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
+Example of loop generated with this step sequencer and model: <audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
+
+&nbsp;
 
 <video id="methlab_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
 <source src="video/methlab_machine.mp4" type='video/mp4'>
