@@ -6,6 +6,30 @@ and edit style.css for the size
 <p align="center"> <img src="figures/architecture.png"> </p>
 -->
 
+<!--
+<p align="center"> <img src="figures/neural_granular.png"> </p>
+-->
+
+<!--
+<p align="center"> <img src="figures/architecture.png"> </p>
+-->
+
+<!--
+<p align="center"> <img src="figures/latent_space.png"> </p>
+-->
+
+<!--
+<p align="center"> <img src="figures/vae double ola.png"> </p>
+-->
+
+<!--
+<p align="center"> <img src="figures/embed_interp.png"> </p>
+-->
+
+<!--
+<p align="center"> <img src="figures/grain_gen.png"> </p>
+-->
+
 <script type="text/javascript"> 
       // Show button
       function look(type){ 
@@ -25,10 +49,6 @@ and edit style.css for the size
 
 ## Motivation for Neural Granular Sound Synthesis
 
-<!--
-<p align="center"> <img src="figures/neural_granular.png"> </p>
--->
-
 In the left, a granular synthesis space is formed by analysing a library of audio grains, scattered as (+), with acoustic descriptors. These dimensions allow for visualization and control of the synthesis. A free-synthesis path can be drawn or a target criterion can be formed by analysing the grain series of an other signal (o). Grains from the library can be then selected by matching these targets with respect to acoustic descriptor values.
 
 Some limitations arise in this process. Amongst others, the acoustic descriptors are not invertible so it is not possible to synthesize from them, besides the scattered library grain coordinates. The quality of the analysis is bound by the choice and design of acoustic descriptors, which only account for local audio similarities. Thus this space does not organize the longer temporal structure of audio events such as notes or drum hits, which cannot be generated without features extracted from an other corresponding target signal.
@@ -39,19 +59,11 @@ In the right, developping a raw waveform Variational Auto-Encoder to learn a gra
 
 ## Model architecture
 
-<!--
-<p align="center"> <img src="figures/architecture.png"> </p>
--->
-
 This figure details the complete Variational Auto-Encoder (VAE) model. The lower VAE encodes grain series into latent series, which are fed to the subtractive noise synthesis decoder. It can be conditionned with concatenation of one-hot user labels. The decoded grain series are overlap-add into a waveform. A second recurrent VAE can be trained on contiguous series of latent features, to learn structured paths in the grain space. Performing this temporal modeling at the down-sampled grain level efficiently accounts for the longer-term relationships while the bottom VAE ensures the quality of the local grain features. Waveform synthesis is optimized with a multi-scale spectrogram reconstruction objective, to account for both transient and harmonic sound features.
 
 [Architecture](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
 
 ## Granular latent space
-
-<!--
-<p align="center"> <img src="figures/latent_space.png"> </p>
--->
 
 2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset and subsequent coloring). Grains can be synthesized from any latent position, at or besides these points of the database latent scatter.
 
@@ -59,29 +71,17 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 ## Structured waveform generation from the recurrent embedding
 
-<!--
-<p align="center"> <img src="figures/vae double ola.png"> </p>
--->
-
 By using this two-level audio modeling, we can generate structured audio events such as musical notes or drum hits. In the first place, the top level embedding is sampled, a latent path is recurrently decoded. This series is fed to the bottom filtering noise decoder which outputs the corresponding waveform.
 
 [Generation from the temporal embedding](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/vae%20double%20ola.png?raw=true)
 
 ## Morphing of sound samples
 
-<!--
-<p align="center"> <img src="figures/embed_interp.png"> </p>
--->
-
 By performing interpolations in the top level embedding, we can transition in between features at the scale of structured audio events. For instance, generating successive latent grain paths that correspond to evolving drum enveloppes, from snapped to more sustained/resonating.
 
 [Morphing of drum sounds](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/embed_interp.png?raw=true)
 
 ## Sound examples from the trained models
-
-<!--
-<p align="center"> <img src="figures/grain_gen.png"> </p>
--->
 
 Resulting interactions in Neural Granular Sound Synthesis. In the left, structured latent paths can be sampled from the higher temporal embedding. In the middle, we can draw and freely synthesize along any latent trajectory. In the right, we can encode an other target signal and resynthesize it.
 
@@ -115,7 +115,7 @@ Variable length free-synthesis trajectories can be drawn accross the latent spac
 
 Latent trajectories may as well be looped, such as a forward-backward linear interpolation, where the step size can be randomized since the model can continuously synthesize along this latent segment. Here applied to strings in *SOL* or to the drum sounds in the *8 Drums* dataset.
 
-<audio controls><source src="audio/interp_interpfb_string2.wav"> <audio controls><source src="audio/interfb_drum1.wav"> <audio controls><source src="audio/interfb_drum2.wav"> <audio controls><source src="audio/interfb_drum3.wav">
+<audio controls><source src="audio/interp_interpfb_string2.wav"></audio> <audio controls><source src="audio/interfb_drum1.wav"></audio> <audio controls><source src="audio/interfb_drum2.wav"></audio> <audio controls><source src="audio/interfb_drum3.wav"></audio>
 
 &nbsp;
 
