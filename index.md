@@ -99,7 +99,7 @@ Following are some reconstructions across the *SOL* orchestra in *ordinario*.
 <audio controls><source src="audio/rec_ord.wav"></audio> <audio controls><source src="audio/rec_ord2.wav"></audio> <audio controls><source src="audio/rec_ord3.wav"></audio> <audio controls><source src="audio/rec_ord4.wav"></audio> <audio controls><source src="audio/rec_ord5.wav"></audio> <audio controls><source src="audio/rec_ord6.wav"></audio> <audio controls><source src="audio/rec_ord7.wav"></audio> <audio controls><source src="audio/rec_ord8.wav"></audio> 
 
 Following are some drum hit reconstructions in the *8 Drums* dataset.
-<audio controls><source src="audio/rec_violin.wav"></audio>
+<audio controls><source src="audio/rec_drum.wav"></audio> <audio controls><source src="audio/rec_drum1.wav"></audio> <audio controls><source src="audio/rec_drum2.wav"></audio> <audio controls><source src="audio/rec_drum3.wav"></audio> <audio controls><source src="audio/rec_drum4.wav"></audio> <audio controls><source src="audio/rec_drum5.wav"></audio> <audio controls><source src="audio/rec_drum6.wav"></audio> <audio controls><source src="audio/rec_drum7.wav"></audio> <audio controls><source src="audio/rec_drum8.wav"></audio> <audio controls><source src="audio/rec_drum9.wav"></audio> <audio controls><source src="audio/rec_drum10.wav"></audio> <audio controls><source src="audio/rec_drum11.wav"></audio> 
 
 &nbsp;
 
