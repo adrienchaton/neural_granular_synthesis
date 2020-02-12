@@ -128,8 +128,6 @@ Latent trajectories may as well be looped, such as a forward-backward linear int
 
 With GPU support, for instance a sufficient dedicated laptop chip or an external thunderbolt hardware, the models can be ran in real-time. In order to apply trained models to these different generative tasks, we currently work on some prototype interfaces based on a [Python OSC](https://pypi.org/project/python-osc/) server controlled from a [MaxMsp](https://cycling74.com) patch.
 
-&nbsp;
-
 ### Neural Drum Machine
 
 Using a model with sequential embedding and conditioning trained over the *8  Drums* dataset classes, we can sample structured one-shot audio clips for each of the drum classes. Since its embedding is continuous, we can explore a great diversity of sounds. Moreover, we can alternatively sample random paths to explore other spectro-temporal dynamics. Once the samples are chosen, they can be played-back in realtime with a 8-track step sequencer, without having an actual sample library but only a generative neural network to write the buffers.
@@ -152,12 +150,8 @@ For this one, a model trained on 10 classes of a [Methlab](https://soundcloud.co
 
 [Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_methlab_machine.png)
 
-&nbsp;
-
 Example of loop generated with this step sequencer and model:
 <audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
-
-&nbsp;
 
 <video id="methlab_machine" class="video-js vjs-default-skin" controls preload="auto" width="600" height="288" data-setup="{}">
 <source src="video/methlab_machine.mp4" type='video/mp4'>
