@@ -121,6 +121,9 @@ Latent trajectories may as well be looped, such as a forward-backward linear int
 
 ### Data-driven resynthesis
 
+We can perform resynthesis by encoding an other sample and decoding its inferred latent grain features. When the target signal does not match the training data distribution of the model, only part of the source features are preserved. The overall synthesis extrapolates the input signal in the style of the training data domain. The following audio files contain diverse input sounds and their resynthesis by a neural granular synthesis model. In the order source/resynthesis: *laught to violin*, *pizzicato to drums*, *clarinet to violin*, *violin to cat* and *clarinet to cat*.
+
+<audio controls><source src="audio/extrapol_laugh_violin.wav"></audio> <audio controls><source src="audio/s16_03_pizz_drum.wav"></audio> <audio controls><source src="audio/extrapol_clarinet_violin.wav"></audio> <audio controls><source src="audio/extrapol_violin_cat.wav"></audio> <audio controls><source src="audio/extrapol_clarinet_cat.wav"></audio>
 
 &nbsp;
 
