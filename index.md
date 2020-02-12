@@ -59,11 +59,19 @@ This figure details the complete Variational Auto-Encoder (VAE) model. The lower
 
 ## Structured waveform generation from the recurrent embedding
 
+By using this two-level audio modeling, we can generate structured audio events such as musical notes or drum hits. In the first place, the top level embedding is sampled, a latent paths is recurrently decoded. This series is fed to the bottom filtering noise decoder which outputs the corresponding waveform.
+
+&nbsp;
+
 <p align="center"> <img src="figures/vae double ola.png"> </p>
 
 &nbsp;
 
 ## Morphing of sound samples
+
+By performing interpolations in the top level embedding, we can transition in between features at the scale of structured audio events. For instance, generating successive latent grain paths that correspond to evolving drum enveloppes, from snapped to more sustained/resonating.
+
+&nbsp;
 
 <p align="center"> <img src="figures/embed_interp.png"> </p>
 
