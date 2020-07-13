@@ -45,10 +45,6 @@ and edit style.css for the size
 
 &nbsp;
 
-[Paper submission](https://github.com/anonymized124/neural_granular_synthesis/blob/master/neural_granular_synthesis_submission.pdf)
-
-&nbsp;
-
 ## Motivation for Neural Granular Sound Synthesis
 
 In the left, a granular synthesis space is formed by analysing a library of audio grains, scattered as (+), with acoustic descriptors. These dimensions allow for visualization and control of the synthesis. A free-synthesis path can be drawn or a target criterion can be formed by analysing the grain series of an other signal (o). Grains from the library can be then selected by matching these targets with respect to acoustic descriptor values.
@@ -57,37 +53,37 @@ Some limitations arise in this process. Amongst others, the acoustic descriptors
 
 In the right, developping a raw waveform Variational Auto-Encoder to learn a grain latent space, we alleviate some of these limitations and enable new generative processes based on concepts of granular sound synthesis. Its learned analysis dimensions are continuously invertible to the signal domain. We can thus synthesize along any path, without need to store the grain library after the training. An other sound sample can be auto-encoded, to perform resynthesis, with some possible additional user controls to condition the decoder generation. On top of this grain-level representation, we can efficiently train a recurrent embedding on contiguous grain series to learn meaningful temporal paths within the latent grain space. As a result, the model can sample structured audio envents such as note and drum hits, as well as morph their features.
 
-[Neural Granular Sound Synthesis](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/neural_granular.png?raw=true)
+[Neural Granular Sound Synthesis](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/neural_granular.png?raw=true)
 
 ## Model architecture
 
 This figure details the complete Variational Auto-Encoder (VAE) model. The lower VAE encodes grain series into latent series, which are fed to the subtractive noise synthesis decoder. It can be conditionned with concatenation of one-hot user labels. The decoded grain series are overlap-add into a waveform. A second recurrent VAE can be trained on contiguous series of latent features, to learn structured paths in the grain space. Performing this temporal modeling at the down-sampled grain level efficiently accounts for the longer-term relationships while the bottom VAE ensures the quality of the local grain features. Waveform synthesis is optimized with a multi-scale spectrogram reconstruction objective, to account for both transient and harmonic sound features.
 
-[Architecture](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
+[Architecture](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/architecture.png?raw=true)
 
 ## Granular latent space
 
 2D visualization (with Principale Component Analysis, *PCA*) of a learned grain space over individual pitched notes of orchestral instruments (from *SOL* dataset and subsequent coloring). Grains can be synthesized from any latent position, at or besides these points of the database latent scatter.
 
-[Granular latent space](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/latent_space.png?raw=true)
+[Granular latent space](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/latent_space.png?raw=true)
 
 ## Structured waveform generation from the recurrent embedding
 
 By using this two-level audio modeling, we can generate structured audio events such as musical notes or drum hits. In the first place, the top level embedding is sampled, a latent path is recurrently decoded. This series is fed to the bottom filtering noise decoder which outputs the corresponding waveform.
 
-[Generation from the temporal embedding](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/vae%20double%20ola.png?raw=true)
+[Generation from the temporal embedding](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/vae%20double%20ola.png?raw=true)
 
 ## Morphing of sound samples
 
 By performing interpolations in the top level embedding, we can transition in between features at the scale of structured audio events. For instance, generating successive latent grain paths that correspond to evolving drum enveloppes, from snapped to more sustained/resonating.
 
-[Morphing of drum sounds](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/embed_interp.png?raw=true)
+[Morphing of drum sounds](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/embed_interp.png?raw=true)
 
 ## Sound examples from the trained models
 
 Resulting interactions in Neural Granular Sound Synthesis. In the left, structured latent paths can be sampled from the higher temporal embedding. In the middle, we can draw and freely synthesize along any latent trajectory. In the right, we can encode an other target signal and resynthesize it.
 
-[Summary of generative granular interactions](https://github.com/anonymized124/neural_granular_synthesis/blob/master/figures/grain_gen.png?raw=true)
+[Summary of generative granular interactions](https://github.com/adrienchaton/neural_granular_synthesis/blob/master/figures/grain_gen.png?raw=true)
 
 *All sound/video examples are raw outputs of the models (besides inputs for the reconstructions and resynthesis), without any kind of audio effect/processing added.*
 
@@ -155,7 +151,7 @@ Using a model with sequential embedding and conditioning trained over the *8  Dr
 
 *The videos are made while running the model on a MacbookPro Retina 2015 **(without GPU)**, some latency can be seen when sampling and writing the buffers. Such latency is however low and given a GPU it could be sampled in real-time by the step sequencer rather than played-back.*
 
-[Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_drum_machine.png)
+[Screenshot](https://raw.githubusercontent.com/adrienchaton/neural_granular_synthesis/master/figures/screen_drum_machine.png)
 
 The upper integer box selects the drum condition sent to the model. The trigger to the message **sample_note** generates a drum hit from the recurrent embedding. The trigger to the message **sample_path** draws a randomized linear path in the grain space, of same length as the embedding sample. This can be seen in the python console on the left side, answering to the messages sent through OSC. While the step sequencer loops, it is possible to resample some drum sounds that overwrite the previous buffer.
 
@@ -171,7 +167,7 @@ The upper integer box selects the drum condition sent to the model. The trigger 
 
 For this one, a model trained on 10 classes of a [Methlab](https://soundcloud.com/methlab-recordings) sample pack is used with a corresponding 10-track step sequencer. Classes are *Bass, Break, Cymbal, Fx, Hat, Kick, Lead, Pad, Perc, Snare*. We use a restricted set of 260 sound samples collected from their online music competitions. The process is similar to the previous video, but the classes of sounds are more ambiguous and not restricted to one-shot samples (e.g. loops).
 
-[Screenshot](https://raw.githubusercontent.com/anonymized124/neural_granular_synthesis/master/figures/screen_methlab_machine.png)
+[Screenshot](https://raw.githubusercontent.com/adrienchaton/neural_granular_synthesis/master/figures/screen_methlab_machine.png)
 
 Example of loop generated with this step sequencer and model: <audio controls><source src="audio/test_methlab_drummachine.wav"></audio>
 
