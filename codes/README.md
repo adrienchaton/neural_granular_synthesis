@@ -1,4 +1,4 @@
-### Pytorch-Lightning codes for training a hierarchical model conditionned on drum classes.
+# Pytorch-Lightning codes for training a hierarchical model conditionned on drum classes.
 
 It is directly handling specific training features such as half-precision (not tested) and logging/profiling.
 
@@ -10,13 +10,13 @@ pip install -r requirements.txt
 
 ## Train own model
 
-# Configure models and training hyper-parameters
+### Configure models and training hyper-parameters
 
 Use default model configurations in ./configs/ or create custom ones (cf. commented parts at the end of models.py)
 
 Use default argument parsers or create custom ones in run_fulldrums_stage123.sh
 
-# Prepare dataset
+### Prepare dataset
 
 --data_dir argument of train_stage1.py should contain folders with .wav files with start of audio already trimmed (onset time)
 
@@ -28,7 +28,7 @@ we provide checkpoints for a model pretrained on a dataset of sire #train = 1326
 
 Clap, Cowbell, Cymb_Crash_Ride, Hat, Kick, Snare, Tom
 
-# Training
+### Training
 
 bash run_fulldrums_stage123.sh which runs on a 12GB NVIDIA GPU
 
