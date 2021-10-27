@@ -1,0 +1,7 @@
+{
+    "e_dim": 256,
+    "h_dim": 512,
+    "n_RNN": 1,
+    "n_linears": 2,
+    "rnn_type": "LSTM"
+}
