@@ -5,7 +5,9 @@ It is directly handling specific training features such as half-precision (not t
 ## Install dependencies
 
 python3.7 -m venv venv_tmp
+
 source venv_tmp/bin/activate
+
 pip install -r requirements.txt
 
 ## Train own model
