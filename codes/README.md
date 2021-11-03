@@ -47,3 +47,5 @@ Either load a fine-tuned hierarchical model or the pretraining checkpoints in fu
 Generate variable-length interpolations in the grain latent space
 
 Generate a loop by sampling the embedding with conditioning on the target drum class
+
+note: the fine-tuned checkpoint is not uploaded due to upload size limits, feel free to ask for it if needed
