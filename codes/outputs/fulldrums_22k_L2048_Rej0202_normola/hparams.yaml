@@ -1,0 +1,15 @@
+channels: 128
+h_dim: 512
+hop_size: 512
+kernel_size: 9
+l_grain: 2048
+learning_rate: 0.0002
+n_convs: 3
+n_grains: 41
+n_linears: 3
+normalize_ola: true
+pp_chans: 5
+pp_ker: 65
+sr: 22050
+stride: 4
+z_dim: 128

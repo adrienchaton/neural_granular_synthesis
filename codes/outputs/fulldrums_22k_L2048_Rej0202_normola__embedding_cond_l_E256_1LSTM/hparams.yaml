@@ -1,0 +1,17 @@
+classes:
+- Clap
+- Cowbell
+- Cymb_Crash_Ride
+- Hat
+- Kick
+- Snare
+- Tom
+conditional: true
+e_dim: 256
+h_dim: 512
+learning_rate: 0.0002
+n_RNN: 1
+n_grains: 41
+n_linears: 2
+rnn_type: LSTM
+z_dim: 128
